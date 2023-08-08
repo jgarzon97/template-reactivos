@@ -1,0 +1,39 @@
+<form role="form">
+    <h5>
+        FORMULARIOS TEMPLATE
+        <hr>
+    </h5>
+    <div class="form-group">
+        <div class="mb-3">
+            <label for="cedula" class="form-label">Cédula:</label>
+            <input type="text" class="form-control" id="cedula" name="cedula" [(ngModel)]="usuario.cedula" required>
+        </div>
+
+        <div class="mb-3">
+            <label for="nombre" class="form-label">Nombre:</label>
+            <input type="text" class="form-control" id="nombre" name="nombre" [(ngModel)]="usuario.nombre" required>
+        </div>
+
+        <div class="mb-3">
+            <label for="fechanacimiento" class="form-label">Fecha de nacimiento:</label>
+            <input type="date" class="form-control" id="fechanacimiento" name="fechanacimiento"
+                [(ngModel)]="usuario.fechanacimiento" required>
+        </div>
+
+        <div class="mb-3">
+            <label for="cedula" class="form-label">Ciudad:</label>
+            <select class="form-select" id="ciudad" name="ciudad" [(ngModel)]="usuario.ciudad" required>
+                <option value="" disabled selected>Selecciona una ciudad</option>
+                <option value="Quito">Quito</option>
+                <option value="Guayaquil">Guayaquil</option>
+                <option value="Cuenca">Cuenca</option>
+                <option value="Machala">Machala</option>
+            </select>
+        </div>
+
+        <div class="mb-3">
+            <button class="btn btn-primary mx-2" (click)="submitForm()">Guardar</button>
+            <button class="btn btn-secondary mx-2" (click)="cancelarFormulario()">Limpiar</button>
+        </div>
+    </div>
+</form>

@@ -1,0 +1,22 @@
+* {
+    box-sizing: border-box;
+}
+
+form {
+    width: 300px;
+    padding: 16px;
+    border-radius: 10px;
+    margin: auto;
+    background-color: #ccc;
+}
+
+form label {
+    width: 72px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+h5 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
